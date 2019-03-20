@@ -83,6 +83,7 @@ window.addEventListener('DOMContentLoaded', () => {
     registerSW();
     headlinesNews();
     document.getElementById('headlines-wrap').style.display = "block";
+    document.getElementById('headlines').classList.add('active');
 });
 
 document.getElementById('headlines').addEventListener('click', headlinesNews);
@@ -97,6 +98,16 @@ function disp(el) {
     var list = document.querySelectorAll('.list');
     var index = Array.prototype.slice.call(list).indexOf(el);
     var item = document.querySelectorAll('.list-wrap');
+    list.forEach(li => {
+        var listIn = Array.prototype.slice.call(list).indexOf(li);
+        // console.log(listIn);
+        if (index !== listIn) {
+            li.classList.remove('active');
+        }
+        else {
+            li.classList.add('active');
+        }
+    })
     item.forEach(it => {
         var listIndex = Array.prototype.slice.call(item).indexOf(it);
         it.style.display = "block";
