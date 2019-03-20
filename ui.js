@@ -7,7 +7,7 @@ class Paint {
     }
     displayNews(content) {
         this.headlinesContainer.innerHTML +=
-            `<a class="card" href="${content.url}" target="_blank">
+            `<a class="card" href="${content.url}" target="_blank"  rel="noopener">
                 <div class="row">
                     <div class="col-md-4 col-5">
                         <img class="news-thumbnail" src="${content.urlToImage}" alt="Image">
