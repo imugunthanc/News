@@ -3,12 +3,12 @@
     "name": "Short News",
     "icons": [
         {
-            "src": "news.jpg",
+            "src": "news.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "news.jpg",
+            "src": "news.png",
             "type": "image/png",
             "sizes": "512x512"
         }

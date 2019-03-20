@@ -97,7 +97,6 @@ document.getElementById('health').addEventListener('click', healthNews);
 document.getElementById('sports').addEventListener('click', sportsNews);
 
 function disp(el) {
-    console.log('clicked');
     var list = document.querySelectorAll('.list');
     var index = Array.prototype.slice.call(list).indexOf(el);
     var item = document.querySelectorAll('.list-wrap');
