@@ -5,8 +5,8 @@ class Paint {
         this.healthContainer = document.getElementById('health-wrap');
         this.sportsContainer = document.getElementById('sports-wrap');
     }
-    displayNews(content) {
-        this.headlinesContainer.innerHTML +=
+    displayNews(content, ui) {
+        ui.innerHTML +=
             `<a class="card" href="${content.url}" target="_blank"  rel="noopener" rel="noreferrer">
                 <div class="row">
                     <div class="col-md-4 col-5">
